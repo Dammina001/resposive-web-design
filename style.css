@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+/* i tried my best but it seems its not enough, i watched videos i read articles, i used Google,i used the slack but i still did not get it */
+*{
+    box-sizing: border-box;
+}
+html{
+    display: block;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: white;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+/* @media screen and (min-width: 480px){} */
+
+
+
+body{
+   /* display: block;
+    margin: auto;
+    cursor: zoom-in;
+    transition: background-color 300ms;
+    -webkit-user-select: none;*/
+    background-image: url("bg-intro-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: hsl(0, 100%, 74%);
+    /* overflow: hidden; */
+}
+.style{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding:  70px;
+    margin: 0 50px;
+}
+.leftside{
+    flex: 50%;
+    padding: 0 4em;
+    width: 50%;
+    /* background-color: red; */
+    align-items: center;
+    justify-content: center;
+}
+.rightside{
+    flex: 50%;
+}
+.top-content{
+    background-color: hsl(248, 32%, 49%);
+    padding: 22px;
+    text-align: center;
+    align-content: center;
+    justify-items: center;
+    border-radius: 4px;
+}
+.container1{
+    background-color: white;
+    padding: 20px;
+    border-radius: 4px;
+
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* margin: 5px; */
+}
+.input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.container{
+    color: hsl(246, 25%, 77%);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: small;
+}
+.container a {
+    text-decoration: none;
+    color: red;
+  }
+  .button{
+    width: 100%;
+  background-color: hsl(154, 59%, 51%);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  box-shadow:   0 5px hsl(154, 56%, 44%);
+  border-radius: 4px;
+  cursor: pointer;
+  }
+.input:focus:invalid{
+    background: url(icon-error.svg) no-repeat 95% 50%;
+    background-size: 25px;
+    border: 2px solid var(--red);
+    transition: border 10ms;
+
+  }
+  .input:focus:invalid~.error::after{
+    content: attr(data-error);
+    position: absolute;
+    bottom: 0;
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 400;
+    right:0;
+    padding-bottom: 1rem;
+    color: var(--red);
+  } 
+  /*input:required:invalid{
+    outline: none;
+    border: 1px solid hsl(0, 100%, 74%);
+    background-image: url(icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-origin: content-box;
+  } 
+  input:invalid+span{
+    display: inline;
+    color: hsl(0, 100%, 74%);
+    float: right;
+    font-size: 14px;
+  }
+  input:invalid{
+    outline: none;
+    border:none;
+    border: 1px solid hsl(0, 100%, 74%);
+  }
+span{
+    display:none; 
+}*/
+ @media screen and (max-width:375px) {
+    .rightside{
+        flex-direction: column;
+    }
+    .leftside{
+        padding: 0em;
+    }
+ }
+
